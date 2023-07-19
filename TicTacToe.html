@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>マルバツゲーム</title>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+  <link rel="stylesheet" href="asset/superfish.css">
+  <link rel="stylesheet" href="asset/normalize.css">
+  <link rel="stylesheet" href="asset/lightbox-dist/css/lightbox.min.css">
+  <link rel="stylesheet" href="asset/tooltipster-dist/css/tooltipster.bundle.min.css">
+
+  <link rel="stylesheet" href="asset/TicTacToe.css">
+  <script src="asset/category.css"></script>
+  <script src="asset/style.css"></script>
+
+  <script src="asset/TicTacToe.js"></script>
+
+</head>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+<!--画面全体-->
+
+<body>
+
+  <div class="TicOut">
+
+    <section>
+      <div class="mainHidden">
+
+      </div>
+
+      <div class="メイン">
+        <nav>
+          <a href="main.html" class="メイン">
+            <h3 class="logo"><img src="img/カービィ.png" width="40" height="40" id="kirby">フライの定食屋</h3>
+          </a>
+        </nav>
+      </div>
+    </section>
+
+    <!--白い枠の領域-->
+    <div class="white-box">
+
+      <!--タイトルを表示する領域-->
+      <div class="title">
+        ○×ゲーム
+      </div>
+
+
+      <!--分割線-->
+      <hr>
+
+
+      <!--順番や勝敗を表示する領域-->
+      <div id="info" class="info">
+        ◯の番！
+      </div>
+
+      <div id="InfoBottom" class="InfoBottom">
+        　
+      </div>
+
+
+      <!--マス目を表示する領域-->
+      <div class="squares">
+        <table align="center">
+          <tr>
+            <td id="00" onclick="game('00');"></td>
+            <td id="01" onclick="game('01');"></td>
+            <td id="02" onclick="game('02');"></td>
+          </tr>
+          <tr>
+            <td id="10" onclick="game('10');"></td>
+            <td id="11" onclick="game('11');"></td>
+            <td id="12" onclick="game('12');"></td>
+          </tr>
+          <tr>
+            <td id="20" onclick="game('20');"></td>
+            <td id="21" onclick="game('21');"></td>
+            <td id="22" onclick="game('22');"></td>
+          </tr>
+        </table>
+      </div>
+
+
+      <!--ボタンを表示する領域-->
+      <div class="reload">
+        <button type="button" onClick="reset();">やり直す</button>
+      </div>
+
+
+    </div>
+  </div>
+
+</body>
+
+</html>

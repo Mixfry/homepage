@@ -1,0 +1,179 @@
+/* *{
+  margin: 0;
+  padding: 0;
+} */
+
+input:focus,textarea:focus,button{
+  outline: none;
+}
+
+/* body{
+  background: #e6ecf0;
+  font-size: 14px;
+} */
+
+ul,li{
+  list-style: none;
+}
+
+#wrapper{
+  top: 106px;
+  left: 355px;
+  width: 605px;
+  height: 800px;
+  margin: auto;
+  z-index: 1;
+  background: #ffffff;
+}
+
+
+header img{
+  float: left;
+  margin-right: 10px;
+  border-radius: 16px;
+}
+
+header textarea{
+  width: calc(100% - 44px);
+  height: 32px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #e6ecf0;
+  padding: 5px 8px;
+  resize: none;
+  box-sizing: border-box;
+}
+
+header textarea.focus{
+  height: 80px;
+}
+
+header textarea::placeholder{
+  color: #aab8c2;
+}
+
+header textarea:focus{
+  border-color: #A4D9F9;
+  border-width: 2px;
+}
+
+.clearfix:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.float-right{
+  float: right;
+}
+
+input[type="submit"]{
+  display: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 90px;
+  text-align: center;
+  background: #4AB3F4;
+  font-size: 14px;
+  line-height: 34px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 45px;
+  border: none;
+}
+
+.stream{
+  background: #fff;
+}
+
+.stream-item{
+  padding: 9px 12px;
+  border-bottom: solid 1px #eee;
+  min-height: 48px;
+}
+
+.stream-item img{
+  border-radius: 24px;
+  float: left;
+  margin-right: 10px;
+}
+
+.full-name{
+  font-weight: bold;
+  color: #14171a;
+  margin-right: 5px;
+}
+
+.user-name{
+  color: #657786;
+}
+
+.time{
+  font-weight: bold;
+  color: #14171a;
+  margin-right: 5px;
+}
+
+.tweet-text{
+  margin-left: 58px;
+  color: #14171a;
+}
+
+footer{
+  text-align: center;
+}
+
+#resetBtn{
+  margin-top: 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 180px;
+  text-align: center;
+  background: #B20008;
+  font-size: 14px;
+  line-height: 34px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 45px;
+  border: none;
+}
+
+.no-tweet{
+  background: #e6ecf0;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+
+.send {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0.3em 0.5em;
+  background: #4AB3F4;
+  font-size: 1.0rem;
+  color: #fff;
+  text-align: center;
+  display: block;
+  margin: auto;
+  border-radius: 30px;
+}
+.send[disabled] {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+.required {
+  color:red;
+}
+.required:before {
+  content: "【必須】"
+}

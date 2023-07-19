@@ -1,0 +1,264 @@
+/* これなんだっけ */
+
+a:hover{
+  color: rgb(60, 179, 141);
+
+  text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF,
+  -1px 1px 0 #FFF, 1px -1px 0 #FFF,
+  0px 1px 0 #FFF,  0-1px 0 #FFF,
+  -1px 0 0 #FFF, 1px 0 0 #FFF;
+
+}
+
+
+/* 背景設定 */
+body{
+  background-image:url("img/バチャ背景.png");
+  /* background: #b7e6ce87 ; */
+  margin: 0;
+  /* font-family:sans-serif; */
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", "Yu Gothic", "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo";
+}
+
+/* ヘッダーの色 */
+header{
+  background: #deffee;
+}
+
+/* ヘッダー設定 */
+#headeerimg {
+  text-align: center;
+}
+
+.headerInner{
+  width: 650px;
+  height: 100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 50px;
+}
+
+
+
+/* メイン設定 */
+.mainInner{
+  width: 650px;
+  margin: auto;
+}
+
+
+/* 上と下の自動サイズ調整 */
+.headerInner,.mainInner{
+  max-width: 650px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* 緑色のカテゴリ装飾 */
+#メイン{
+  background: #d3eebf;
+  background-image: url("img/背景.png");
+  line-height: 50px;
+  padding: 0 15px;
+  color: rgb(110, 110, 138);
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 3px 3px 3px rgb(155, 155, 155);
+}
+
+/* 特に意味はない */
+/* h2:hover{
+  background-image: url(背景.png);
+  line-height: 50px;
+  padding: 0 15px;
+  color: rgb(110, 110, 138);
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 3px 3px 3px rgb(155, 155, 155);
+  /* box-shadow: 0 0 10px rgb(78, 94, 86) inset; */
+/* } */
+
+
+/* リザルト画面のほうの紫カテゴリ装飾 */
+#リザルト{
+  background: #e6baeb;
+  background-image: url("img/リザ背景.png");
+  line-height: 50px;
+  padding: 0 15px;
+  color: rgb(84, 84, 112);
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 3px 3px 3px rgb(155, 155, 155);
+}
+
+/* リザルト画面のほうの.カテゴリ装飾 */
+#お絵描き{
+  background-image: url("img/お絵描き背景.png");
+  /* background-image: ; */
+  line-height: 50px;
+  padding: 0 15px;
+  color: rgb(84, 84, 112);
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 3px 3px 3px rgb(155, 155, 155);
+}
+
+/* カービィアイコンに加えられるやつ */
+#kirby{
+  top: 5px;
+  border-radius: 10px;
+  /* animation: loading-animation 1s linear infinite; */
+  /* animation: buruburu-animation .1s infinite; */
+}
+
+
+
+/* 回るやつ */
+/* @keyframes loading-animation {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+} */
+
+
+
+.ついったー{
+  display: inline-block;
+  background: #c1e7ee;
+  color: rgb(81, 81, 81);
+  text-decoration: none;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 10px;
+  text-align: center;
+  transition:700ms ;
+  /* ここからborder-radiusプロパティを追加 */
+}
+
+/* プロセカプロフィールのボタンの変色 */
+.ついったー:hover{
+  background-color:#a5c3e5;
+  transition:700ms ;
+}
+
+
+
+
+/*  */
+
+/* .page_top_btn {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  font-weight: bold;
+  padding: 0.7em;
+  text-align: center;
+  background: rgb(255, 0, 0);
+  color: #fff;
+  transition: 0.3s0;
+} */
+
+/* マウスオーバー時 */
+/* .page_top_btn:hover {
+  background: rgb(255, 0, 0, 0.8);
+  color: rgb(255, 255, 255, 0.8);
+} */
+
+/* ボタン全体 */
+#page_top{
+  width: 75px;
+  height: 75px;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  background: #e25407;
+  border-radius: 50%;
+  opacity: 0.6;
+  transition: 300ms;
+  }
+
+  #page_top:hover{
+    transform: scale(1.15);
+    transition: 300ms;
+  }
+
+  /* Font Awesome */
+  #page_top:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: '\f0d8'; /*アイコン*/
+  font-size: 50px;
+  color: rgb(255, 255, 255); /*アイコンの色*/
+  position: absolute;
+  width: 30px;
+  height: 60px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+  }
+
+
+  /* サイドバー */
+  /* #header {
+    box-sizing: border-box;
+    background: #ccc;
+    height: 50px;
+  }
+  #main {
+    box-sizing: border-box;
+    margin-left: 220px;
+    padding: 20px 40px;
+  } */
+  #sub {
+    box-sizing: border-box;
+    top: 0px;
+    height: 100%;
+    width: 175px;
+    position: fixed;
+    overflow: auto;
+    background: #eee;
+    padding: 20px;
+  }
+  
+
+  
+/* 下のやつの色 */
+footer{
+  background: #eeeeee;
+}
+
+/* 下のやつ設定 */
+.footerInner{
+  height: 60px;
+  text-align: center;
+  margin-top: 50px;
+  padding: 30px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #262626;
+}
+
+.tooltip{
+  transition: 500ms;
+}
+
+.tooltip:hover{
+  transform: scale(1.15);
+  transition: 500ms;
+}
+
+
+/*  */
+
